@@ -2,6 +2,8 @@
 <html>
 <head>
 <title>Log</title>
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -9,15 +11,22 @@
         <form action="">
             <div class="row">
                 <div class="col-inputs">
-                    <input type="text" name="username" placeholder="Username" required>
-                    <input type="password" name="password" placeholder="Password" required>
-                    <p class="options">Forgot password?</p>
-                    <a href="#">SIGN IN</a></p>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                      </svg>
-
+                    <form action="/action_page.php">
+                        
+                        <div class="input-container">
+                          <i class="fa fa-user icon"></i>
+                          <input class="input-field" type="text" placeholder="Username" name="usrnm">
+                        </div>
+                      
+                      
+                        <div class="input-container">
+                          <i class="fa fa-log icon"></i>
+                          <input class="input-field" type="password" placeholder="Password" name="psw">
+                        </div>
+                      
+                        <button type="submit" class="btn">SIGN-IN</button>
+                      </form>
+                    
        
                 <!--<button class="button button1">SIGN IN</button>-->
                 <div class="vl">
