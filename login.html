@@ -39,5 +39,19 @@
             </div>
         </form>
     </div>
+<script>
+    const container = document.querySelector('.container'),
+          form      = container.querySelectorAll('form'),
+          submitInput = form[0].querySelector(input[type='submit']);
+        
+    function getDataForm(e){
+        e.preventDefault();
+        var formData = new FormData(form[0]);
+        alert( formData.get('usernameField')+'-'+ formData.get('passwordField')+ formData.get(''));
+    }
+    document.addEventListener('DOMContentLoaded', function(){
+        submitInput.addEventListener('click',getDataForm,false);
+    }, false);
+</script>
 </body>
 </html>
